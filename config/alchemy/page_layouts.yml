@@ -1,0 +1,12 @@
+- name: intro
+  unique: true
+  elements: [headline, text, image]
+  autogenerate: [headline, text]
+
+- name: standard
+  elements: [headline, text, image]
+  autogenerate: [headline, text]
+
+- name: contact
+  elements: [headline, text, contact_form]
+  autogenerate: [headline, text, contact_form]

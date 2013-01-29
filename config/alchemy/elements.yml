@@ -1,0 +1,14 @@
+- name: headline
+  contents:
+  - name: headline
+    type: EssenceText
+    default: :headline
+
+- name: text_block
+  contents:
+  - name: text
+    type: EssenceRichtext
+    default: Ipsum praesent te ullamcorper nam et. Iriure option futurum dynamicus in facilisis. Nibh iusto videntur litterarum anteposuerit vel. Quinta gothica mirum nisl facit in. Nobis erat ipsum eodem fiant autem.
+
+- name: gallery
+  picture_gallery: true
