@@ -1,12 +1,12 @@
-- name: intro
+- name: index
   unique: true
-  elements: [headline, text, image]
-  autogenerate: [headline, text]
+  elements: [main_headline, text_block, single_picture, picture_gallery]
+  autogenerate: [main_headline, text_block]
 
 - name: standard
-  elements: [headline, text, image]
-  autogenerate: [headline, text]
+  elements: [main_headline, text_block, single_picture, picture_gallery]
+  autogenerate: [main_headline, text_block]
 
 - name: contact
-  elements: [headline, text, contact_form]
-  autogenerate: [headline, text, contact_form]
+  elements: [main_headline, text_block, contact_form]
+  autogenerate: [main_headline, text_block, contact_form]

@@ -1,8 +1,8 @@
-- name: headline
+- name: main_headline
   contents:
   - name: headline
     type: EssenceText
-    default: :headline
+    default: This is a headline
 
 - name: text_block
   contents:
@@ -10,5 +10,37 @@
     type: EssenceRichtext
     default: Ipsum praesent te ullamcorper nam et. Iriure option futurum dynamicus in facilisis. Nibh iusto videntur litterarum anteposuerit vel. Quinta gothica mirum nisl facit in. Nobis erat ipsum eodem fiant autem.
 
-- name: gallery
+- name: single_picture
+  contents:
+  - name: image
+    type: EssencePicture
+
+- name: picture_gallery
   picture_gallery: true
+
+- name: contact_form
+  unique: true
+  contents:
+  - name: mail_from
+    type: EssenceText
+    index: false
+    validate:
+    - presence
+    - format
+    validate_format_as: email
+  - name: mail_to
+    type: EssenceText
+    index: false
+    validate:
+    - presence
+    - format
+    validate_format_as: email
+  - name: subject
+    type: EssenceText
+    index: false
+    validate:
+    - presence
+  - name: success_page
+    type: EssenceSelect
+    validate:
+    - presence
