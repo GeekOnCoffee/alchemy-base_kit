@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{config,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "alchemy_cms", ["~> 2.5.0.rc2"]
+  s.add_dependency "alchemy_cms"
 end
